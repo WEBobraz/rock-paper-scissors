@@ -42,8 +42,14 @@ print(f"Computer chose {computer_choice} ")
 
 if imput_choice == 0 and computer_choice ==2:
   print("You win!")
+elif computer_choice == 0 and imput_choice == 2:
+  print("You lose!")
 elif computer_choice > imput_choice:
   print("You lose!")
+elif imput_choice > computer_choice:
+  print("You win!")
+elif computer_choice == imput_choice:
+  print("It's a draw!")
 else:
   print("You type an ivalid number, game over")
 
