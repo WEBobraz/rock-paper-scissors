@@ -50,7 +50,9 @@ elif imput_choice > computer_choice:
   print("You win!")
 elif computer_choice == imput_choice:
   print("It's a draw!")
-else:
+
+#need to up
+elif imput_choice >= 3 or imput_choice < 0:
   print("You type an ivalid number, game over")
 
 # imput_choose = int(imput_choose)
