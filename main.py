@@ -28,9 +28,14 @@ scissors = '''
 #Write your code below this line 👇
 import random
 
+images = [rock, paper, scissors]
+
 imput_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissor\n"))
+print(images[imput_choice])
+
 computer_choice = random.randint(0, 2)
-print(f"Computer chose {computer_choice} ")
+print(f"Computer chose: {computer_choice}")
+print(images[computer_choice])
 
 # if computer_choice > imput_choice:
 #   print("Computer wins!")
@@ -42,6 +47,8 @@ print(f"Computer chose {computer_choice} ")
 
 if imput_choice == 0 and computer_choice ==2:
   print("You win!")
+elif imput_choice >= 3 or imput_choice < 0:
+  print("You type an ivalid number, game over")
 elif computer_choice == 0 and imput_choice == 2:
   print("You lose!")
 elif computer_choice > imput_choice:
@@ -51,9 +58,6 @@ elif imput_choice > computer_choice:
 elif computer_choice == imput_choice:
   print("It's a draw!")
 
-#need to up
-elif imput_choice >= 3 or imput_choice < 0:
-  print("You type an ivalid number, game over")
 
 # imput_choose = int(imput_choose)
 # list_choose = ["Rock", "Paper", "Scissor"]
