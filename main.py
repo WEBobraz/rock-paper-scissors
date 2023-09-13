@@ -26,15 +26,19 @@ scissors = '''
 '''
 
 #Write your code below this line 👇
+import random
 
-imput_choose = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissor ")
-imput_choose = int(imput_choose)
-list_choose = ["Rock", "Paper", "Scissor"]
-if imput_choose == 0:
-    print(rock)
-if imput_choose == 1:
-    print(paper)
-if imput_choose == 2:
-    print(scissors)
+imput_choice = input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissor\n")
+computer_choice = random.randint(0, 2)
+print(f"Computer chose {computer_choice} ")
+
+# imput_choose = int(imput_choose)
+# list_choose = ["Rock", "Paper", "Scissor"]
+# if imput_choose == 0:
+#     print(rock)
+# if imput_choose == 1:
+#     print(paper)
+# if imput_choose == 2:
+#     print(scissors)
 
 
